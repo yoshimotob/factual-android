@@ -147,51 +147,6 @@ public class BusinessSearchActivity extends MapActivity implements LocationListe
 					LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 					View searchingView = inflater.inflate(R.layout.about_popup,
 							null, false);
-					TextView deviceInfo = (TextView) searchingView.findViewById(R.id.deviceInfo);
-
-					StringBuffer sb = new StringBuffer();
-					sb.append(Build.BOARD);
-					sb.append(System.getProperty("line.separator"));
-					//sb.append(Build.BOOTLOADER);
-					sb.append(System.getProperty("line.separator"));
-					sb.append(Build.BRAND);
-					sb.append(System.getProperty("line.separator"));
-					//sb.append(Build.CPU_ABI);
-					sb.append(System.getProperty("line.separator"));
-					//sb.append(Build.CPU_ABI2);
-					sb.append(System.getProperty("line.separator"));
-					sb.append(Build.DEVICE);
-					sb.append(System.getProperty("line.separator"));
-					sb.append(Build.DISPLAY);
-					sb.append(System.getProperty("line.separator"));
-					sb.append(Build.FINGERPRINT);
-					sb.append(System.getProperty("line.separator"));
-					//sb.append(Build.HARDWARE);
-					sb.append(System.getProperty("line.separator"));
-					sb.append(Build.HOST);
-					sb.append(System.getProperty("line.separator"));
-					sb.append(Build.ID);
-					sb.append(System.getProperty("line.separator"));
-					//sb.append(Build.MANUFACTURER);
-					sb.append(System.getProperty("line.separator"));
-					sb.append(Build.MODEL);
-					sb.append(System.getProperty("line.separator"));
-					sb.append(Build.PRODUCT);
-					sb.append(System.getProperty("line.separator"));
-					//sb.append(Build.SERIAL);
-					sb.append(System.getProperty("line.separator"));
-					sb.append(Build.TAGS);
-					sb.append(System.getProperty("line.separator"));
-					sb.append(Build.TIME);
-					sb.append(System.getProperty("line.separator"));
-					sb.append(Build.TYPE);
-					sb.append(System.getProperty("line.separator"));
-					//sb.append(Build.UNKNOWN);
-					sb.append(System.getProperty("line.separator"));
-					sb.append(Build.USER);
-					
-					deviceInfo.setText(sb.toString());
-					
 					setContentView(searchingView);
 				}
 
@@ -205,6 +160,7 @@ public class BusinessSearchActivity extends MapActivity implements LocationListe
 		if (currentLocationText == null) {
 			currentLocationText = (TextView) findViewById(R.id.currentLocation);
 		    currentLocationText.setBackgroundColor(Color.WHITE);
+		    currentLocationText.setTextColor(Color.BLACK);
 
 			LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 			String locationProvider = LocationManager.GPS_PROVIDER;
@@ -765,7 +721,7 @@ public class BusinessSearchActivity extends MapActivity implements LocationListe
 
 	public void onLocationChanged(Location loc) {
 		if (loc != null) {
-			String location = "Lat: "+loc.getLatitude()+", Long:"+loc.getLongitude();
+			String location = "Lat: "+loc.getLatitude()+System.getProperty("line.separator")+"Long:"+loc.getLongitude();
 			currentLocationText.setText(location);
 		}
 	}
