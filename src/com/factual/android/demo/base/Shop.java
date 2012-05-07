@@ -1,8 +1,8 @@
-package com.factual.base;
+package com.factual.android.demo.base;
 
 import java.io.Serializable;
 
-import com.factual.base.util.GeoUtils;
+import com.factual.android.demo.base.util.GeoUtils;
 import com.google.android.maps.GeoPoint;
 
 public class Shop implements Serializable {

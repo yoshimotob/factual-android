@@ -12,7 +12,7 @@
         android:layout_weight="1"
         android:orientation="vertical" >
 
-        <com.factual.base.SearchMap
+        <com.factual.android.demo.base.SearchMap
             android:id="@+id/mapview"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"

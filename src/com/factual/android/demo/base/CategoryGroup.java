@@ -1,4 +1,4 @@
-package com.factual.base;
+package com.factual.android.demo.base;
 
 import java.io.Serializable;
 import java.util.List;

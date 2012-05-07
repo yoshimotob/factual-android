@@ -1,4 +1,4 @@
-package com.factual.base;
+package com.factual.android.demo.base;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -52,7 +52,7 @@ import com.factual.driver.Query;
 import com.factual.R;
 import com.factual.driver.ReadResponse;
 import com.factual.driver.android.Android;
-import com.factual.base.util.GeoUtils;
+import com.factual.android.demo.base.util.GeoUtils;
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapActivity;
 import com.google.android.maps.MapView;
@@ -108,6 +108,7 @@ public class BusinessSearchActivity extends MapActivity implements LocationListe
 		super.onCreate(savedInstanceState);
 
 		factual.setPlatform(new Android(this));
+		factual.debug(true);
 		
 		setContentView(R.layout.main);
 

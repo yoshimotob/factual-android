@@ -1,9 +1,9 @@
-package com.factual.coffeefinder.base;
+package com.factual.android.demo.coffeefinder.base;
 
 import android.os.Bundle;
 
 import com.factual.driver.Query;
-import com.factual.base.BusinessSearchActivity;
+import com.factual.android.demo.base.BusinessSearchActivity;
 
 public class CoffeeLocatorActivityBase extends BusinessSearchActivity {
     /** Called when the activity is first created. */

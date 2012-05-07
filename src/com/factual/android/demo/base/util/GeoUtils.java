@@ -1,4 +1,4 @@
-package com.factual.base.util;
+package com.factual.android.demo.base.util;
 
 import com.google.android.maps.GeoPoint;
 
