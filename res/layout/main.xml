@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+        android:id="@+id/rootElem" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <com.factual.base.SearchMap
+            android:id="@+id/mapview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:apiKey="0OLBAg6cQbqRnZzNLD7SXm9QjF2kf6XSAQ5Y10w"
+            android:clickable="true" />
+
+        <!--
+        
+        new debug: 0OLBAg6cQbqRnZzNLD7SXm9QjF2kf6XSAQ5Y10w
+        
+         Debug key: 0OLBAg6cQbqTPjvMmVxfBzy1w4K-9cgSpsbsXJA
+		 Release: 0OLBAg6cQbqQh-KQi0iGAm9aZUS_0Eel3TQU97g        -->
+
+        <RelativeLayout
+            android:id="@+id/transparent_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/SearchTextView"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="0px"
+                        android:layout_marginLeft="0px"
+                        android:layout_marginRight="0px"
+                        android:layout_marginTop="0px"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:hint="@string/shop_search"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:imeOptions="actionSearch" />
+
+                    <ImageButton
+                        android:contentDescription="@string/search_button"
+                        android:id="@+id/searchButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/searchbutton" />
+
+                    <ImageButton
+                        android:contentDescription="@string/my_location_button"
+                        android:id="@+id/centerMyLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/mylocationbutton" />
+
+                    <ImageButton
+                        android:contentDescription="@string/search_button"
+                        android:id="@+id/moreResults"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/morebutton"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                
+                
+    
+    <TextView
+        android:id="@+id/currentLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No location found" />
+    
+    
+                <Button
+                    android:id="@+id/filterButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+                
+                
+    
+    
+            </LinearLayout>
+            
+    
+        </RelativeLayout>
+    </FrameLayout>
+<!-- 
+    <com.google.ads.AdView
+        android:id="@+id/adElement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="a14f2cdf6886230"
+        ads:loadAdOnCreate="true"
+        ads:testDevices="4B2CE3E1C7170B4ED8B489ACB71A5BEF"
+        android:visibility="gone" />
+ -->
+</LinearLayout>

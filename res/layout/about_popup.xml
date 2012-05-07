@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/deviceInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="blank" />
+    
+    <TextView
+        android:id="@+id/itemAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_text" />
+    
+    
+    
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:shrinkColumns="1">
+<!-- 
+    <TableRow>
+        <ImageView
+            android:src="@drawable/ic_menu_backup"
+            android:padding="3dip" />
+        <TextView
+            android:text="@string/about_search"
+            android:gravity="left"
+            android:padding="3dip" />
+    </TableRow>
+    
+    <TableRow>
+        <ImageView
+            android:src="@drawable/ic_menu_disc"
+            android:padding="3dip" />
+        <TextView
+            android:text="@string/about_my_location"
+            android:gravity="left"
+            android:padding="3dip" />
+    </TableRow>
+
+    <TableRow>
+        <ImageView
+            android:src="@drawable/ic_menu_add"
+            android:padding="3dip" />
+        <TextView
+            android:text="@string/about_more"
+            android:gravity="left"
+            android:padding="3dip" />
+    </TableRow>
+     -->
+</TableLayout>
+</LinearLayout>
